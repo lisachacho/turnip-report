@@ -25,6 +25,8 @@ gem 'jbuilder', '~> 2.7'
 # Use foreman gem to run all servers
 gem "foreman", "~> 0.87.1"
 
+gem "devise", "~> 4.7"
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
