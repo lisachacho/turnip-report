@@ -1,6 +1,6 @@
 # turnip-report
 
-A Rails + React app for selling/buying turnips on the Stock Exchange in Animal Crossing: New Horizons.
+A Rails + React app for selling/buying turnips on the Stock Market in Animal Crossing: New Horizons.
 
 *From [Lisa Ciaccio](https://github.com/lisabobisa) and [Cory McDonald](https://github.com/corymcdonald).*
 
@@ -14,6 +14,7 @@ A Rails + React app for selling/buying turnips on the Stock Exchange in Animal C
 2) Bundler 2.1.4
 3) Node 10.15.3
 3) Yarn 1.22.4
+4) `gem install mailcatcher`
 
 ### Running the App
 Install all dependencies and build the db using the `setup` binstub.
