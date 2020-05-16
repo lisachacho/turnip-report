@@ -1,24 +1,39 @@
 # turnip-report
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A Rails + React app for selling/buying turnips on the Stock Exchange in Animal Crossing: New Horizons.
 
-Things you may want to cover:
+*From [Lisa Ciaccio](https://github.com/lisabobisa) and [Cory McDonald](https://github.com/corymcdonald).*
 
-* Ruby version
+----------
 
-* System dependencies
+## Development
 
-* Configuration
+### Prerequisites
 
-* Database creation
+1) Ruby 2.6.3
+2) Bundler 2.1.4
+3) Node 10.15.3
+3) Yarn 1.22.4
 
-* Database initialization
+### Running the App
 
-* How to run the test suite
+The Foreman gem is used to run both the Rails server and Webpacker. 
 
-* Services (job queues, cache servers, search engines, etc.)
+Start both servers using 
 
-* Deployment instructions
+```
+bin/server
+```
 
-* ...
+and navigate to http://localhost:5000/.
+
+-------
+
+## Tech Specs
+
+|Uses|Version|For|
+|--|--|--|
+|Rails|6|Back end (ish)|
+|React|16.13.1|UI|
+|Webpacker|5.1.1|Serving JS assets|
+|Devise|1.22.4|User management|
