@@ -1,1 +1,1 @@
-json.partial! "islands/island", island: @island
+json.partial!("islands/island", island: @island)

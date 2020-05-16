@@ -1,1 +1,1 @@
-json.array! @islands, partial: "islands/island", as: :island
+json.array!(@islands, partial: "islands/island", as: :island)
