@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  turnip_price: MyString
+  expiration: 2020-05-16 17:55:40
+  entry_fee: MyText
+  polite_request: MyText
+  description: MyText
+  language: MyString
+  island_id: Island1
+
+two:
+  turnip_price: MyString
+  expiration: 2020-05-16 17:55:40
+  entry_fee: MyText
+  polite_request: MyText
+  description: MyText
+  language: MyString
+  island_id: Island2
