@@ -1,11 +1,6 @@
 class IslandsController < ApplicationController
   before_action :set_island, only: [:show, :update, :destroy]
 
-  # GET /islands.json
-  def index
-    @islands = Island.all
-  end
-
   # GET /islands/1.json
   def show
   end

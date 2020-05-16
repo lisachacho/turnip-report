@@ -5,11 +5,6 @@ class IslandsControllerTest < ActionDispatch::IntegrationTest
     @island = islands(:one)
   end
 
-  test "should get index" do
-    get islands_url
-    assert_response :success
-  end
-
   test "should create island" do
     assert_difference('Island.count') do
       post islands_url, params: { island: { directions_to_nook: @island.directions_to_nook, fruits: @island.fruits, hosts: @island.hosts, name: @island.name, villagers: @island.villagers } }

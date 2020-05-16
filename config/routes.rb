@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   resources :stocks, except: [:new, :edit]
-  resources :islands, except: [:new, :edit]
+  resources :islands, only: [:create, :show, :update, :destroy]
+
   devise_for :users
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
+  root to: 'stocks#index'
 end

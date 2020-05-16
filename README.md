@@ -16,7 +16,6 @@ A Rails + React app for selling/buying turnips on the Stock Exchange in Animal C
 3) Yarn 1.22.4
 
 ### Running the App
-
 Install all dependencies and build the db using the `setup` binstub.
 
 ```
