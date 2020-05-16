@@ -17,9 +17,13 @@ A Rails + React app for selling/buying turnips on the Stock Exchange in Animal C
 
 ### Running the App
 
-The Foreman gem is used to run both the Rails server and Webpacker. 
+Install all dependencies and build the db using the `setup` binstub.
 
-Start both servers using 
+```
+bin/setup
+```
+
+The Foreman gem is used to run both the Rails server and Webpacker. Start both servers using 
 
 ```
 bin/server
