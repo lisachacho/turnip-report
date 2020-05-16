@@ -10,10 +10,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_07_034706) do
+ActiveRecord::Schema.define(version: 2020_05_16_225540) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "islands", force: :cascade do |t|
+    t.string "name"
+    t.string "hosts"
+    t.text "directions_to_nook"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "stocks", force: :cascade do |t|
+    t.string "turnip_price"
+    t.datetime "expiration"
+    t.text "entry_fee"
+    t.text "polite_request"
+    t.text "description"
+    t.string "language"
+    t.bigint "island_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["island_id"], name: "index_stocks_on_island_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -21,10 +42,17 @@ ActiveRecord::Schema.define(version: 2020_05_07_034706) do
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
+    t.string "confirmation_token"
+    t.datetime "confirmed_at"
+    t.datetime "confirmation_sent_at"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "islands_id"
+    t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
     t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["islands_id"], name: "index_users_on_islands_id"
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "users", "islands", column: "islands_id"
 end
