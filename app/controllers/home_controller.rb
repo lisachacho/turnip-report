@@ -1,5 +1,4 @@
 class HomeController < ApplicationController
-  def welcome
-    render template: 'layouts/application'
+  def react
   end
 end

@@ -4,6 +4,6 @@ Rails.application.routes.draw do
 
   devise_for :users
 
-  get 'home/welcome'
-  root to: 'home#welcome'
+  root to: 'home#react'
+  get '*pages', to: 'home#react', constraints: { format: 'html' }
 end
