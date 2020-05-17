@@ -4,5 +4,6 @@ Rails.application.routes.draw do
 
   devise_for :users
 
-  root to: 'stocks#index'
+  get 'home/welcome'
+  root to: 'home#welcome'
 end
