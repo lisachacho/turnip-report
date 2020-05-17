@@ -4,5 +4,6 @@ Rails.application.routes.draw do
 
   devise_for :users
 
-  root to: 'stocks#index'
+  root to: 'home#react'
+  get '*pages', to: 'home#react', constraints: { format: 'html' }
 end
