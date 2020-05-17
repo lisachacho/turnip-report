@@ -7,7 +7,7 @@ import { Circle } from "./navigation/NavigationStyle";
 import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faPlus, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faTh, faPlus, faUser } from "@fortawesome/free-solid-svg-icons";
 
 export default class Navigation extends PureComponent {
   static propTypes = {};
@@ -15,7 +15,7 @@ export default class Navigation extends PureComponent {
   render() {
     return (
       <div className="d-flex justify-content-center">
-        <CircleLink path="/" icon={faHome} />
+        <CircleLink path="/" icon={faTh} />
         <CircleLink path="/add" icon={faPlus} />
         <CircleLink path="/profile" icon={faUser} />
       </div>
@@ -26,7 +26,7 @@ export default class Navigation extends PureComponent {
 const CircleLink = (props) => (
   <Link to={props.path}>
     <Circle>
-      <FontAwesomeIcon icon={props.icon} size="lg" />
+      <FontAwesomeIcon icon={props.icon} size="2x" />
     </Circle>
   </Link>
 );

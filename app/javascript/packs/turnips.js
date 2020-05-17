@@ -7,7 +7,7 @@ import Stalks from "./turnips/Stalks";
 import { Main } from "./turnips/SharedStyle";
 
 const Turnips = () => (
-  <div class="container">
+  <div className="container">
     <Router>
       <Main>
         <Switch>
