@@ -2,21 +2,23 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
+import {Container} from 'react-bootstrap'
+
 import Navigation from "./turnips/Navigation";
 import Stalks from "./turnips/Stalks";
 import { Main } from "./turnips/SharedStyle";
 
 const Turnips = () => (
-  <div className="container">
+  <div className="">
     <Router>
-      <Main>
-        <Switch>
-          <Route exact path="/">
-            <Stalks />
-          </Route>
-        </Switch>
-        <Navigation />
-      </Main>
+        <Main className="py-4 px-3">
+          <Switch>
+            <Route exact path="/">
+              <Stalks />
+            </Route>
+          </Switch>
+          <Navigation />
+        </Main>
     </Router>
   </div>
 );
