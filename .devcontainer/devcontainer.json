@@ -6,7 +6,7 @@
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "app",
 	"workspaceFolder": "/workspace",
-
+	"postCreateCommand": "bundle install --local",
 	// Configure tool-specific properties.
 	"customizations": {
 		// Configure properties specific to VS Code.
